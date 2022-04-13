@@ -1,0 +1,14 @@
+D:\learnUnity\CSHARP\learn\learn\bin\Debug\netcoreapp3.1\learn.exe
+D:\learnUnity\CSHARP\learn\learn\bin\Debug\netcoreapp3.1\learn.deps.json
+D:\learnUnity\CSHARP\learn\learn\bin\Debug\netcoreapp3.1\learn.runtimeconfig.json
+D:\learnUnity\CSHARP\learn\learn\bin\Debug\netcoreapp3.1\learn.runtimeconfig.dev.json
+D:\learnUnity\CSHARP\learn\learn\bin\Debug\netcoreapp3.1\learn.dll
+D:\learnUnity\CSHARP\learn\learn\bin\Debug\netcoreapp3.1\learn.pdb
+D:\learnUnity\CSHARP\learn\learn\obj\Debug\netcoreapp3.1\learn.csproj.AssemblyReference.cache
+D:\learnUnity\CSHARP\learn\learn\obj\Debug\netcoreapp3.1\learn.GeneratedMSBuildEditorConfig.editorconfig
+D:\learnUnity\CSHARP\learn\learn\obj\Debug\netcoreapp3.1\learn.AssemblyInfoInputs.cache
+D:\learnUnity\CSHARP\learn\learn\obj\Debug\netcoreapp3.1\learn.AssemblyInfo.cs
+D:\learnUnity\CSHARP\learn\learn\obj\Debug\netcoreapp3.1\learn.csproj.CoreCompileInputs.cache
+D:\learnUnity\CSHARP\learn\learn\obj\Debug\netcoreapp3.1\learn.dll
+D:\learnUnity\CSHARP\learn\learn\obj\Debug\netcoreapp3.1\learn.pdb
+D:\learnUnity\CSHARP\learn\learn\obj\Debug\netcoreapp3.1\learn.genruntimeconfig.cache
