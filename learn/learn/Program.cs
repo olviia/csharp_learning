@@ -6,53 +6,42 @@ namespace learn
     {
         static void Main(string[] args)
         {
+            //Дано двузначное число.Определить: 
+            // а) какая из его цифр больше, первая или вторая;
+            // б) одинаковы ли его цифры. 
+
+
             int number;
             int remainder;
+            int divided;
 
-            Console.WriteLine("Enter the number");
+            Console.WriteLine("Enter the 2-digits number");
             number = Convert.ToInt32(Console.ReadLine());
 
             remainder = number % 10;
+            divided = number / 10;
 
-            switch (remainder)
+            if (number > 99 || number < 10)
             {
-                case 7:
-                    Console.WriteLine("Number is uneven, finished with 7");
-                    break;
-                case 1:
-                    Console.WriteLine("Number is uneven, finished with 1");
-                    break;
-                case 3:
-                    Console.WriteLine("Number is uneven, finished with 3");
-                    break;
-                case 5:
-                    Console.WriteLine("Number is uneven, finished with 5");
-                    break;
-                case 9:
-                    Console.WriteLine("Number is uneven, finished with 9");
-                    break;
-                case 2:
-                    Console.WriteLine("Number is even, finished with not 7, finished with 2");
-                    break;
-                case 4:
-                    Console.WriteLine("Number is even, finished with not 7, finished with 4");
-                    break;
-                case 6:
-                    Console.WriteLine("Number is even, finished with not 7, finished with 6");
-                    break;
-                case 8:
-                    Console.WriteLine("Number is even, finished with not 7, finished with 8");
-                    break;
-                case 0:
-                    Console.WriteLine("Number is even, finished with not 7, finished with 0");
-                    break;
-                default:
-                    Console.WriteLine("Something goes wrong");
-                    break;
+                Console.WriteLine("Wrong number");
             }
-
-
-
+            else
+            {
+                Console.WriteLine($"First digit is {divided}");
+                Console.WriteLine($"Second digit is {remainder}");
+                if (divided > remainder)
+                {
+                    Console.WriteLine($"{divided} is bigger then {remainder}");
+                }
+                else if (divided < remainder)
+                {
+                    Console.WriteLine($"{divided} is less then {remainder}");
+                }
+                else 
+                {
+                    Console.WriteLine($"{divided} equals {remainder}");
+                }
+            }
             Console.ReadLine();
         }
     }
