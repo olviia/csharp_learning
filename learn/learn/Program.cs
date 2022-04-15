@@ -13,38 +13,38 @@ namespace learn
             number = Convert.ToInt32(Console.ReadLine());
 
             remainder = number % 10;
-
+            37 - оканчивается нечетным, оканчивается на 7, является нечетным. 48 - оканчивается четным, не оканчивается на 7, является четным
             switch (remainder)
             {
                 case 7:
-                    Console.WriteLine("Number is uneven, finished with 7");
+                    Console.WriteLine("Number is uneven, finished with 7, finished with uneven digit");
                     break;
                 case 1:
-                    Console.WriteLine("Number is uneven, finished with 1");
+                    Console.WriteLine("Number is uneven, finished not with 7, finished with uneven digit");
                     break;
                 case 3:
-                    Console.WriteLine("Number is uneven, finished with 3");
+                    Console.WriteLine("Number is uneven, finished not with 7, finished with uneven digit");
                     break;
                 case 5:
-                    Console.WriteLine("Number is uneven, finished with 5");
+                    Console.WriteLine("Number is uneven, finished not with 7, finished with uneven digit");
                     break;
                 case 9:
-                    Console.WriteLine("Number is uneven, finished with 9");
+                    Console.WriteLine("Number is uneven, finished not with 7, finished with uneven digit");
                     break;
                 case 2:
-                    Console.WriteLine("Number is even, finished with not 7, finished with 2");
+                    Console.WriteLine("Number is even, finished not with 7, finished with even digit");
                     break;
                 case 4:
-                    Console.WriteLine("Number is even, finished with not 7, finished with 4");
+                    Console.WriteLine("Number is even, finished not with 7, finished with even digit");
                     break;
                 case 6:
-                    Console.WriteLine("Number is even, finished with not 7, finished with 6");
+                    Console.WriteLine("Number is even, finished not with 7, finished with even digit");
                     break;
                 case 8:
-                    Console.WriteLine("Number is even, finished with not 7, finished with 8");
+                    Console.WriteLine("Number is even, finished not with 7, finished with even digit");
                     break;
                 case 0:
-                    Console.WriteLine("Number is even, finished with not 7, finished with 0");
+                    Console.WriteLine("Number is even, finished not with 7, finished with even digit");
                     break;
                 default:
                     Console.WriteLine("Something goes wrong");
