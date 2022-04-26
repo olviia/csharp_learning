@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Globalization;
 
 namespace learn
 {
@@ -7,28 +7,26 @@ namespace learn
     {
         static void Main(string[] args)
         {
-           /* При запуске программы, должна отобразиться сегодняшняя дата в формате 14.11.2015.
-            Чем точнее она будет, тем лучше.Подумайте, как можно это реализовать и добиться максимальной точности.
-            Напомню, что системно можно получить количество миллисекунд, прошедших от 01.01.1970 года с момощью метода
-            System.currentTimeInMills();*/
+            /* Дополнить предыдущую задачу, при помощи конструкций выбора сделать 
+             * так, чтобы он выводил дату в формате: 
+             * День - 14, месяц - ноябрь, год - 2015, день недели - суббота. 
+             */
 
-            long date;
-            int year;
-            int month;
-            int day;
-            int hour;
-            int minute;
-            int second;
-
-            Console.WriteLine("Enter the 1-4 digits number");
-
-            string timestamp = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        int year;
+                        string month;
+                        int day;
+                        string dayOfWeek;
 
 
-            Console.WriteLine($"{timestamp}");
+            DateTime dateCurrent = DateTime.Now;
 
-            //date = DateTimeOffset(now).FromUnixTimeMilliseconds();
-            
+            year = dateCurrent.Year;
+            month = dateCurrent.ToString("MMMM", CultureInfo.InvariantCulture);
+            day = dateCurrent.Day;
+            dayOfWeek = dateCurrent.DayOfWeek.ToString();
+
+
+            Console.WriteLine($"Day - {day},  Month - {month}, year - {year}, day of week - {dayOfWeek}");
 
             Console.ReadLine();
         }
