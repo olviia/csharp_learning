@@ -7,26 +7,48 @@ namespace learn
     {
         static void Main(string[] args)
         {
-            /* Дополнить предыдущую задачу, при помощи конструкций выбора сделать 
-             * так, чтобы он выводил дату в формате: 
-             * День - 14, месяц - ноябрь, год - 2015, день недели - суббота. 
+            /* "Умножение без умножения". 
+             * Считать с клавиатуры 2 числа и вычислить 
+             * их умножение не используя математическое операцию *
              */
+            double firstNum;
+            double secondNum;
+            double multiple = 0;
 
-                        int year;
-                        string month;
-                        int day;
-                        string dayOfWeek;
+            Console.WriteLine("Enter the first number: ");
+            firstNum = Convert.ToDouble(Console.ReadLine());
 
-
-            DateTime dateCurrent = DateTime.Now;
-
-            year = dateCurrent.Year;
-            month = dateCurrent.ToString("MMMM", CultureInfo.InvariantCulture);
-            day = dateCurrent.Day;
-            dayOfWeek = dateCurrent.DayOfWeek.ToString();
+            Console.WriteLine("Enter the second number: ");
+            secondNum = Convert.ToDouble(Console.ReadLine());
 
 
-            Console.WriteLine($"Day - {day},  Month - {month}, year - {year}, day of week - {dayOfWeek}");
+            if ((firstNum >= 0 && secondNum >= 0)|| (firstNum <= 0 && secondNum >= 0))
+            {
+                for (int i = 1; i <= secondNum; i++)
+                {
+                    multiple += firstNum;
+                }
+            } else if(firstNum <= 0 && secondNum <= 0)
+            {
+                
+                for (int i = 1; i <= -secondNum; i++)
+                {
+                    multiple -= firstNum;
+                }
+            }else if(firstNum >= 0 && secondNum <= 0)
+            {
+                
+                for (int i = 1; i <= firstNum; i++)
+                {
+                    multiple += secondNum;
+                }
+            } else
+            {
+                Console.WriteLine("Input was wrong");
+            }
+
+            Console.WriteLine($"Multiple of {firstNum} and {secondNum} is {multiple}");
+
 
             Console.ReadLine();
         }
