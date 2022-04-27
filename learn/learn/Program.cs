@@ -7,47 +7,33 @@ namespace learn
     {
         static void Main(string[] args)
         {
-            /* "Умножение без умножения". 
-             * Считать с клавиатуры 2 числа и вычислить 
-             * их умножение не используя математическое операцию *
+            /*  Программа считает среднее арифметическое вводимых с клавиатуры чисел. 
+             *  Сначала программа предлагает ввести количество этих чисел, 
+             *  а потом предлагает непосредственно вводить эти числа. 
+             *  Ответ должен быть округлен по правилу округления.
              */
-            double firstNum;
-            double secondNum;
-            double multiple = 0;
 
-            Console.WriteLine("Enter the first number: ");
-            firstNum = Convert.ToDouble(Console.ReadLine());
+            int amountNums;
+            int sum = 0;
+            decimal result;
 
-            Console.WriteLine("Enter the second number: ");
-            secondNum = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Enter the amount of numbers: ");
+            amountNums = Convert.ToInt32(Console.ReadLine());
 
 
-            if ((firstNum >= 0 && secondNum >= 0)|| (firstNum <= 0 && secondNum >= 0))
+            for(int i = 1; i<=amountNums; i++)
             {
-                for (int i = 1; i <= secondNum; i++)
-                {
-                    multiple += firstNum;
-                }
-            } else if(firstNum <= 0 && secondNum <= 0)
-            {
-                
-                for (int i = 1; i <= -secondNum; i++)
-                {
-                    multiple -= firstNum;
-                }
-            }else if(firstNum >= 0 && secondNum <= 0)
-            {
-                
-                for (int i = 1; i <= firstNum; i++)
-                {
-                    multiple += secondNum;
-                }
-            } else
-            {
-                Console.WriteLine("Input was wrong");
+                Console.WriteLine($"Enter {i} number: ");
+                int temp = Convert.ToInt32(Console.ReadLine());
+
+                sum += temp;
             }
 
-            Console.WriteLine($"Multiple of {firstNum} and {secondNum} is {multiple}");
+            result = sum / Convert.ToDecimal(amountNums);
+            Console.WriteLine($" {result} ");
+
+
+            Console.WriteLine($"Result is {decimal.Round(result)} ");
 
 
             Console.ReadLine();
